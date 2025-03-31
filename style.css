@@ -1,0 +1,167 @@
+/* Base Styles */
+body {
+  font-family: 'Georgia', serif; /* Different font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar using Flexbox */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* Header styling */
+header {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section Header */
+.section-header {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Ordered List */
+ol {
+  margin: 20px;
+  padding-left: 40px;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Table Styling using CSS Grid for centering */
+.table-container {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #bbb;
+  padding: 10px;
+}
+
+table th {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 600px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: inline-block;
+  width: 120px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form select {
+  width: calc(100% - 140px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer Styling */
+#footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #444;
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+  /* Navigation: Stack items vertically */
+  .nav-list {
+    flex-direction: column;
+  }
+  
+  .nav-list li {
+    margin: 10px 0;
+  }
+  
+  /* Form: Make inputs full width */
+  form label,
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="date"],
+  form select {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Tablet Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    padding: 15px;
+  }
+}
+
+/* Desktop Devices: Adjust layout if needed for larger screens */
+@media (min-width: 1025px) {
+  /* Additional styling for desktop can be added here */
+}
