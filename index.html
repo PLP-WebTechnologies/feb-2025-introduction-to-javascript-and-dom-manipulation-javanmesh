@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Manipulation Example</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#list">List</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#form">Register</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#js">JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="intro">
+    <h1 id="header-title">Welcome to the JavaScript DOM Manipulation Demo</h1>
+    <p>This demo shows how JavaScript can dynamically change content, modify styles, and add or remove elements.</p>
+  </header>
+
+  <!-- Additional Sections (Ordered List, Contacts, Form, Media) -->
+  <section id="list">
+    <h2 class="section-header">Ordered List (Roman Numerals)</h2>
+    <ol type="I">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+  </section>
+
+  <section id="contacts">
+    <h2 class="section-header">Contact List</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>123 Main St, Springfield</td>
+            <td>123-456-7890</td>
+            <td>johndoe@example.com</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak Ave, Centerville</td>
+            <td>987-654-3210</td>
+            <td>janesmith@example.com</td>
+          </tr>
+          <tr>
+            <td>Bob Johnson</td>
+            <td>789 Pine Rd, Lakeside</td>
+            <td>555-123-4567</td>
+            <td>bob.johnson@example.com</td>
+          </tr>
+          <tr>
+            <td>Alice Brown</td>
+            <td>321 Maple Dr, Hilltown</td>
+            <td>444-987-6543</td>
+            <td>alicebrown@example.com</td>
+          </tr>
+          <tr>
+            <td>Charlie Davis</td>
+            <td>654 Elm St, River City</td>
+            <td>222-333-4444</td>
+            <td>charliedavis@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="form">
+    <h2 class="section-header">Registration Form</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+      </div>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select your country</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Interests:</legend>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="movies" name="interests" value="movies">
+        <label for="movies">Movies</label>
+      </fieldset>
+      <div>
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </section>
+
+  <section id="media">
+    <h2 class="section-header">Multimedia Elements</h2>
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <h3>Video</h3>
+    <video width="600" controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- JavaScript Interaction Section -->
+  <section id="js">
+    <h2 class="section-header">JavaScript Interactions</h2>
+    <!-- Button to change text color -->
+    <button id="changeTextBtn">Change Header Color</button>
+    <!-- Button to add/remove a paragraph -->
+    <button id="toggleParagraphBtn">Add/Remove Paragraph</button>
+    <!-- Dynamic content area for adding elements -->
+    <div id="dynamicContent"></div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <p>&copy; 2025 Javan Meshack. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
